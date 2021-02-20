@@ -1,0 +1,36 @@
+public class Abstract_Animal_Example {
+
+    public  static abstract class Animal{
+
+        public void sleep(){
+            System.out.println("Zzzz....");
+        }
+
+        // For abstract class and also it's body is empty.
+
+        public abstract void Animal_Sound();
+    }
+
+    public static class Cat extends Animal{
+        public void Animal_Sound(){
+            System.out.println("The CAT sound is Meo Meo Meo .....");
+        }
+    }
+    public static class Dog extends Animal{
+        public void Animal_Sound(){
+            System.out.println("The DOG sound is Baow Baow Baow .....");
+        }
+    }
+    public static void main(String[]args){
+
+        Cat cat=new Cat();
+        Dog dog=new Dog();
+
+        dog.sleep();
+        dog.Animal_Sound();
+
+        cat.sleep();
+        cat.Animal_Sound();
+
+    }
+}
